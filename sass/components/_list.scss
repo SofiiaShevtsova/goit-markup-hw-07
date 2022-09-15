@@ -1,0 +1,16 @@
+@mixin list($gap){
+    @extend .resed;
+    display: flex;
+    gap: $gap;
+    }
+
+    .list{
+            
+        &--nav { @include list (50px)};
+        &--contact {
+            @include list (30px);
+                margin-left: auto;
+        }
+
+        
+    }
