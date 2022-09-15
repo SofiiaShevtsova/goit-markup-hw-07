@@ -55,7 +55,7 @@
         </button>
       </section>
       <section class="benefits">
-        <h2 class="title-none">наші переваги</h2>
+        <h2 class="visually-hidden">наші переваги</h2>
         <!--Заголовок треба приховати в css-->
         <div class="container">
           <ul class="list">
@@ -363,28 +363,28 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="container">
+      <div class="container--footer-flex">
+        <div class="container--footer">
         <a href="./index.html" class="logo">
           <span class="logo__item">Web</span><span class="logo__item--white">Studio</span></a>
-          <address class="address">
-            <ul class="list">
-              <li class="list__card">
+          <address class="footer__address">
+            <ul class="list--block">
+              <li class="list__card--blok">
                 <a
                   href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="footer__contact-item"
+                  class="footer__contact-item--white"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
 
-              <li class="list__card">
+              <li class="list__card--blok">
                 <a href="mailto:info@devstudio.com" class="footer__contact-item"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="list__card">
+              <li class="list__card--blok">
                 <a href="tel:+380961111111" class="footer__contact-item"
                   >+38 096 111 11 11</a
                 >
@@ -392,36 +392,36 @@
             </ul>
           </address>
         </div>
-        <div class="container">
+        <div class="container--footer">
           <h3 class="footer__title">приєднуйтесь</h3>
-                <ul class="list">
+                <ul class="list--contact-link">
                   <li class="list__card">
-                    <a href="" class="contact-link"><svg width="20" height="20" class="contact-link__icon">
+                    <a href="" class="contact-link--white"><svg width="20" height="20" class="contact-link__icon">
                         <use href="./images/svg/icons.svg.svg#icon-insta"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="list__card">
-                    <a href="" class="contact-link"><svg width="20" height="20" class="contact-link__icon">
+                    <a href="" class="contact-link--white"><svg width="20" height="20" class="contact-link__icon">
                         <use href="./images/svg/icons.svg.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="list__card">
-                    <a href="" class="contact-link"><svg width="20" height="20" class="contact-link__icon">
+                    <a href="" class="contact-link--white"><svg width="20" height="20" class="contact-link__icon">
                         <use href="./images/svg/icons.svg.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="list__card">
-                    <a href="" class="contact-link"><svg width="20" height="20" class="contact-link__icon">
+                    <a href="" class="contact-link--white"><svg width="20" height="20" class="contact-link__icon">
                         <use href="./images/svg/icons.svg.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
         </div>
-        <div class="container">
+        <div class="container--footer">
           <h3 class="footer__title">Підпишіться на розсилку</h3>
           <form name="email" class="form-list" autocomplete="on">
             <label class="form-list__label"
@@ -451,8 +451,8 @@
         </button>
         <form action="" class="modal-form">
           <h3 class="modal-form__title">Залиште свої дані, ми вам передзвонимо</h3>
-          <ul class="list">
-            <li class="list__card">
+          <ul class="list--block">
+            <li class="list__card--blok">
               <label for="name" class="modal-form__item">Ім'я</label>
               <div class="modal-form__input-box">
                 <input type="text" id="name" name="name" class="modal-form__input" />
@@ -461,7 +461,7 @@
                 </svg>
               </div>
             </li>
-            <li class="list__card">
+            <li class="list__card--blok">
               <label for="tel" class="modal-form__item">Телефон</label>
               <div class="modal-form__input-box">
                 <input
@@ -475,7 +475,7 @@
                 </svg>
               </div>
             </li>
-            <li class="list__card">
+            <li class="list__card--blok">
               <label for="email" class="modal-form__item">Пошта</label>
               <div class="modal-form__input-box">
                 <input
@@ -489,13 +489,13 @@
                 </svg>
               </div>
             </li>
-            <li class="list__card">
+            <li class="list__card--blok">
               <label for="coment" class="modal-form__item">Коментар</label>
               <textarea
                 type="text"
                 id="coment"
                 name="coment"
-                class="modal-form__input"
+                class="modal-form__input--textarea"
                 placeholder="Введіть текст"
               ></textarea>
             </li>

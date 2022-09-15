@@ -1,8 +1,35 @@
 @mixin container($display) {
     display:$display;
+    text-align: center;
     align-items: center;
     justify-content: center;
     width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+        padding: 0 15px;
+        margin: 0 auto;
 }
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    @include container(blok);
+    &--footer{
+        display: block;
+        text-align: start;
+        &:first-child{
+            margin-right: 70px;
+        }
+        &:last-child{
+            margin-left: auto;
+            width: 570px;
+        }
+
+        &-flex{
+    @include container(flex);            
+            
+        }
+        
+    }
+}
+

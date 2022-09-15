@@ -1,15 +1,30 @@
 @mixin list($gap){
     @extend .resed;
     display: flex;
+    text-align: start;
     gap: $gap;
     }
 
     .list{
+        @include list (30px);
             
         &--nav { @include list (50px)};
         &--contact {
-            @include list (30px);
+              @include list (30px);
                 margin-left: auto;
+        }
+        &--block{
+            @extend .resed;
+            display: block;
+            text-align: start;
+            
+        }
+        &__card--blok:not(:first-child){
+            margin-top: 9px;
+
+        }
+        &--contact-link{
+                    @include list (10px);
         }
 
         
