@@ -171,14 +171,14 @@ summary {
   pointer-events: none;
 }
 
-.resed, .hero__title, .contact-item, .nav__item, .logo, .list--wrap, .list--btn-proj, .list--contact-link, .list--block, .list--contact, .list--nav, .list {
+.resed, .hero__title, .contact__item, .contact, .nav__item, .logo, .soc-contact, .list--wrap, .list--btn-proj, .list--block, .list--nav, .list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-.icon-box, .benefits__icon-box, .policy__check-icon, .policy__label, .policy, .modal-form__input-icon, .modal__btn, .contact-link, .contact-link--white, .button__icon {
+.icon-box, .benefits__icon-box, .policy__check-icon, .policy__label, .policy, .modal-form__input-icon, .modal__btn, .soc-contact__link, .soc-contact__link--white, .button__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +202,7 @@ summary {
 }
 .container--footer:last-child {
   margin-left: auto;
-  width: 570px;
+  width: calc(50% - 30px);
 }
 .container--footer-flex {
   display: flex;
@@ -265,23 +265,12 @@ summary {
   text-align: start;
   gap: 50px;
 }
-.list--contact {
-  display: flex;
-  text-align: start;
-  gap: 30px;
-  margin-left: auto;
-}
 .list--block {
   display: block;
   text-align: start;
 }
 .list__card--blok:not(:first-child) {
   margin-top: 9px;
-}
-.list--contact-link {
-  display: flex;
-  text-align: start;
-  gap: 10px;
 }
 .list--btn-proj {
   display: flex;
@@ -306,7 +295,12 @@ summary {
   margin-top: 0;
 }
 
-.contact-link, .contact-link--white {
+.soc-contact {
+  display: flex;
+  text-align: start;
+  gap: 10px;
+}
+.soc-contact__link, .soc-contact__link--white {
   width: 44px;
   height: 44px;
   fill: currentColor;
@@ -314,10 +308,11 @@ summary {
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.contact-link--white {
+.soc-contact__link--white {
   fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.contact-link:hover, .contact-link--white:hover, .contact-link:focus, .contact-link--white:focus {
+.soc-contact__link:hover, .soc-contact__link--white:hover, .soc-contact__link:focus, .soc-contact__link--white:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -528,7 +523,13 @@ body {
   background-color: #2196f3;
 }
 
-.contact-item {
+.contact {
+  display: flex;
+  text-align: start;
+  gap: 30px;
+  margin-left: auto;
+}
+.contact__item {
   display: flex;
   align-items: center;
   color: #757575;
@@ -538,26 +539,26 @@ body {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-item__icon {
+.contact__item:hover, .contact__item:focus {
+  color: #2196f3;
+}
+.contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
-.contact-item:hover, .contact-item:focus {
-  color: #2196f3;
-}
 
-.footer__contact-item, .footer__contact-item--white {
+.footer__contact__item, .footer__contact__item--white {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 }
-.footer__contact-item--white {
+.footer__contact__item--white {
   color: #ffffff;
 }
-.footer__contact-item--white:focus, .footer__contact-item--white:hover {
+.footer__contact__item--white:focus, .footer__contact__item--white:hover {
   color: #2196f3;
 }
-.footer__contact-item:focus, .footer__contact-item--white:focus, .footer__contact-item:hover, .footer__contact-item--white:hover {
+.footer__contact__item:focus, .footer__contact__item--white:focus, .footer__contact__item:hover, .footer__contact__item--white:hover {
   color: #2196f3;
 }
 
@@ -592,7 +593,9 @@ body {
   padding: 94px 0;
 }
 .benefits__icon-box {
+  padding: 25px 100px;
   margin-bottom: 30px;
+  background-color: #f5f4fa;
 }
 .benefits__title {
   margin-bottom: 10px;
@@ -694,6 +697,7 @@ body {
 }
 .footer__title {
   margin-bottom: 20px;
+  margin-top: 0;
   font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;

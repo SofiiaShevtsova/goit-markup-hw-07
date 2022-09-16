@@ -22,7 +22,7 @@
         }
         &:last-child{
             margin-left: auto;
-            width: 570px;
+            width: calc(50% - 30px);
         }
 
         &-flex{

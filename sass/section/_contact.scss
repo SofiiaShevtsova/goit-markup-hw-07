@@ -1,5 +1,7 @@
-.contact-item{
-        @extend .resed;
+.contact{
+    @include list(30px);
+        margin-left: auto;
+    &__item{ @extend .resed;
         display: flex;
             align-items: center;
         
@@ -9,22 +11,26 @@
             line-height: 1.14;
             letter-spacing: 0.02em;
         transition: color 250ms $timing-function;
+    &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+       
             &__icon{
                 fill: currentColor;
                     margin-right: 10px;
             }
-            &:hover, &:focus {
-                color: $accent-color;   
-            }
+            
+        }
 
-}
 
-.footer__contact-item{
+.footer__contact__item{
     text-decoration: none;
                 transition: color 250ms $timing-function;
                 color: rgba(255, 255, 255, 0.6);
                 &--white{
-                    @extend .footer__contact-item;
+                    @extend .footer__contact__item;
                     color: $text-color-white;
                 &:focus,
                     &:hover {

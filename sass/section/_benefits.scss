@@ -2,7 +2,9 @@
     padding: 94px 0;
     &__icon-box {
         @extend .icon-box;
+        padding: 25px 100px;
         margin-bottom: 30px;
+        background-color: $bgr-color-second;
     }
     &__title{
         margin-bottom: 10px;
