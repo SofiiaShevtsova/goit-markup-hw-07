@@ -1,16 +1,44 @@
 .button{
-    min-width: 216px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    min-width: 200px;
         height: 50px;
         cursor: pointer;
-    
+    padding: 10px 30px;
         border-radius: 4px;
         border: transparent;
+        margin: 0 auto;
     
         color:$btn-text-color;
         background-color:$accent-color;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
-        text-align: inherit;
         letter-spacing: 0.06em;
+        &__icon{
+            @extend .icon-box;
+            fill:$btn-text-color;
+        }
+        &--proj{
+            border: transparent;
+                border-radius: 4px;
+                padding: 6px 22px;
+            
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.62;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $text-color-primary;
+                cursor: pointer;  
+                transition: color 250ms $timing-function,
+                            background-color 250ms $timing-function,
+                            box-shadow 250ms $timing-function;
+                &:hover, &:focus{
+                    color: $btn-text-color;
+            background-color: $accent-color;
+                        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+                            0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);}
+                        }
 }

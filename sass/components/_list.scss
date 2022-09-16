@@ -26,6 +26,16 @@
         &--contact-link{
                     @include list (10px);
         }
+        &--btn-proj{
+            @include list (8px);
+            justify-content: center;
+            margin-bottom: 50px;
+
+        }
+        &--wrap{
+            @include list (30px);
+            flex-wrap: wrap;
+        }
 
         
     }

@@ -7,14 +7,17 @@
         line-height: 1.71;
     &__checkbox{
         @extend .visually-hidden;
-        &:checked .policy__check-box{
-            border: none;
-                background-origin: border-box;
-                background-color: $accent-color;
+     &:checked + .policy__check-box {
+               border: none;
+               background-origin: border-box;
+               background-color: $accent-color;
+           }
+      
         }
-    }
+           
     &__label{
         @extend .icon-box;
+        cursor: pointer;
     }
     &__check-box{
         display: flex;
@@ -27,7 +30,7 @@
         margin: 0%;
             padding: 0%;
             @extend .icon-box;
-            fill: orange;
+            fill: $text-color-white;
     }
     &__link{
         color: $accent-color;

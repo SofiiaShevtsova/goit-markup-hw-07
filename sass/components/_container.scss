@@ -26,7 +26,8 @@
         }
 
         &-flex{
-    @include container(flex);            
+    @include container(flex);  
+    align-items: flex-start;          
             
         }
         
