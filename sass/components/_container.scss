@@ -25,12 +25,13 @@
             width: calc(50% - 30px);
         }
 
-        &-flex{
-    @include container(flex);  
-    align-items: flex-start;          
-            
-        }
+       
         
     }
+         &--footer-flex {
+             @include container(flex);
+             align-items: baseline;
+    
+         }
 }
 
